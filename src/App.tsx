@@ -56,7 +56,7 @@ if (GiftImg) {
 
   const getGiftSt = () => {
     const GiftImg = document.getElementById("giftbox");
-    if (GiftImg) {
+    if (GiftImg !== null) {
       GiftImg.addEventListener("click", () => {
         setTimeout(() => {
           setGiftSt(true);
