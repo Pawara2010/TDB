@@ -13,12 +13,13 @@ export default function BirthdayShow() {
     return () => timers.forEach(clearTimeout);
   }, []);
 
-  const messages = {
-    1: "🌟 Keep Smiling, Shine Bright 🌟",
-    2: "✨ Wishing You Endless Joy ✨",
-    3: "🎂 May All Your Dreams Come True 🎂",
-    4: "🎉 Happy Birthday Damsahani 🎉",
-  };
+  const messages: Record<number, string> = {
+  1: "🌟 Keep Smiling, Shine Bright 🌟",
+  2: "✨ Wishing You Endless Joy ✨",
+  3: "🎂 May All Your Dreams Come True 🎂",
+  4: "🎉 Happy Birthday Damsahani 🎉",
+};
+
 
   return (
     <section className="h-screen w-screen flex justify-center items-center bg-black overflow-hidden relative">
