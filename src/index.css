@@ -1,0 +1,79 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Caveat:wght@500;600&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import "tailwindcss";
+.clip-envelope-flap {
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+/* Paper background with soft gradient */
+.bg-paper {
+  background: linear-gradient(180deg, #ffffff 0%, #fff6f7 100%);
+  border-color: #fde8e8;
+}
+
+/* Subtle paper grain texture */
+.bg-paper-grain {
+  background-image: radial-gradient(rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 6px 6px;
+}
+
+/* Ink color token */
+.text-ink {
+  color: #2b2b2b;
+}
+
+/* Inner shadow for depth */
+.shadow-inner {
+  box-shadow: inset 0 -6px 18px rgba(0,0,0,0.04);
+}
+
+/* Flap animation origin */
+.flap {
+  transform-origin: 50% 100%;
+  backface-visibility: hidden;
+}
+
+
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+html,
+body,
+#root {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fbf4e8;
+  color: #2c1b22;
+  -webkit-font-smoothing: antialiased;
+}
+.paper-grain {
+  background-image: radial-gradient(
+      rgba(44, 27, 34, 0.045) 1px,
+      transparent 1px
+    ),
+    radial-gradient(rgba(44, 27, 34, 0.03) 1px, transparent 1px);
+  background-size: 14px 14px, 22px 22px;
+  background-position: 0 0, 7px 11px;
+}
+:focus-visible {
+  outline: 2px solid #7b2d4e;
+  outline-offset: 3px;
+}
+
+.font {
+  font-family: "Montserrat", sans-serif;
+}
+
+.anim {
+  animation: fade 2s linear;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
