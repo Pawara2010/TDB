@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import { Confetti } from './components/Confetti';
 import { SealedEnvelope } from './components/SealedEnvelope';
 import { MessageLetter } from './components/MessageLetter';
@@ -80,6 +81,7 @@ export function App() {
               cakeSt !== "/cake-2.gif" ? <Cake onOpen={getCakeSt} /> : !giftSt ? <Gifts onOpen={getGiftSt}/> : <LastMessage/>
         }
       </AnimatePresence>
+      <Analytics />
     </main>);
 
 }
