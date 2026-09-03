@@ -41,7 +41,7 @@ export function App() {
     const cakeImg = document.getElementById("cakeSt");
     if (cakeImg) {
       cakeImg.addEventListener("load", () => {
-        const cake2 = document.getElementById("cakeSt").getAttribute('src');
+        const cake2 = cakeImg.getAttribute('src');
         if (cake2) {
           setTimeout(() => {
             setCakeSt(cake2);
