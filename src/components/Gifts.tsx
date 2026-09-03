@@ -22,7 +22,7 @@ export function Gifts({ onOpen }: GiftsProps) {
   ];
 
   return (
-    <section className="flex min-h-screen pb-100 items-center justify-center bg-linear-to-br from-rose-100 to-sky-100">
+    <section className="flex min-h-screen items-center justify-center bg-linear-to-br from-rose-100 to-sky-100">
       <div className="relative flex flex-col items-center">
         {/* Gift Box */}
         {!opened && (
