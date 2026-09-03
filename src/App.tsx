@@ -40,11 +40,13 @@ export function App() {
 
   const getCakeSt = () => {
     const cakeImg = document.getElementById("cakeSt");
-    cakeImg.addEventListener("load", () => {
-      setTimeout(() => {
-        setCakeSt(document.getElementById("cakeSt").getAttribute('src'));
-      }, 6000)
-    }); 
+    if (cakeImg) {
+      cakeImg.addEventListener("load", () => {
+        setTimeout(() => {
+          setCakeSt(document.getElementById("cakeSt").getAttribute('src'));
+        }, 6000)
+      }); 
+    };
   };
 
   const getGiftSt = () => {
