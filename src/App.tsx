@@ -17,12 +17,6 @@ export function App() {
   const [cakeSt, setCakeSt] = useState<string | null>(null);
   const [giftSt, setGiftSt] = useState<boolean | null>(null);
 
-if (GiftImg) {
-  setGift(GiftImg);
-}
-
-
-
   const audio = new Audio('/hbd.mp3'); // place file in public/
   audio.preload = 'auto';
 
