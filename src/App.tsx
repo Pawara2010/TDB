@@ -51,11 +51,13 @@ export function App() {
 
   const getGiftSt = () => {
     const GiftImg = document.getElementById("giftbox");
-    GiftImg.addEventListener("click", () => {
-      setTimeout(() => {
-        setGiftSt(true);
-      }, 8000)
-    }); 
+    if (GiftImg) {
+      GiftImg.addEventListener("click", () => {
+        setTimeout(() => {
+          setGiftSt(true);
+        }, 8000)
+      }); 
+    };
   };
 
   audio.addEventListener("ended", () => {
