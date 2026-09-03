@@ -41,12 +41,12 @@ export function App() {
     const cakeImg = document.getElementById("cakeSt");
     if (cakeImg) {
       cakeImg.addEventListener("load", () => {
-        setTimeout(() => {
-          const cake2 = document.getElementById("cakeSt").getAttribute('src');
-          if (cake2) {
-            setCakeSt();
-            }, 6000)
-          };
+        const cake2 = document.getElementById("cakeSt").getAttribute('src');
+        if (cake2) {
+          setTimeout(() => {
+            setCakeSt(cake2);
+          }, 6000);
+        };
       }); 
     };
   };
