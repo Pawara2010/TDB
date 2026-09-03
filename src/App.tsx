@@ -14,8 +14,13 @@ export function App() {
   const [confettiKey, setConfettiKey] = useState(0);
   const [confettiOn, setConfettiOn] = useState(false);
   const [adoFinished, setAdoFinshed] = useState(false);
-  const [cakeSt, setCakeSt] = useState("");
-  const [giftSt, setGiftSt] = useState(false);
+  const [cakeSt, setCakeSt] = useState<string | null>(null);
+  const [giftSt, setGiftSt] = useState<boolean | null>(null);
+
+if (GiftImg) {
+  setGift(GiftImg);
+}
+
 
 
   const audio = new Audio('/hbd.mp3'); // place file in public/
