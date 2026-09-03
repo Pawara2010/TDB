@@ -14,8 +14,13 @@ export function App() {
   const [confettiKey, setConfettiKey] = useState(0);
   const [confettiOn, setConfettiOn] = useState(false);
   const [adoFinished, setAdoFinshed] = useState(false);
-  const [cakeSt, setCakeSt] = useState("");
-  const [giftSt, setGiftSt] = useState(false);
+  const [cakeSt, setCakeSt] = useState<string | null>(null);
+  const [giftSt, setGiftSt] = useState<boolean | null>(null);
+
+if (GiftImg) {
+  setGift(GiftImg);
+}
+
 
 
   const audio = new Audio('/hbd.mp3'); // place file in public/
@@ -40,20 +45,24 @@ export function App() {
 
   const getCakeSt = () => {
     const cakeImg = document.getElementById("cakeSt");
-    cakeImg.addEventListener("load", () => {
-      setTimeout(() => {
-        setCakeSt(document.getElementById("cakeSt").getAttribute('src'));
-      }, 6000)
-    }); 
+    if (cakeImg) {
+      cakeImg.addEventListener("load", () => {
+        setTimeout(() => {
+          setCakeSt(document.getElementById("cakeSt").getAttribute('src'));
+        }, 6000)
+      }); 
+    };
   };
 
   const getGiftSt = () => {
     const GiftImg = document.getElementById("giftbox");
-    GiftImg.addEventListener("click", () => {
-      setTimeout(() => {
-        setGiftSt(true);
-      }, 8000)
-    }); 
+    if (GiftImg !== null) {
+      GiftImg.addEventListener("click", () => {
+        setTimeout(() => {
+          setGiftSt(true);
+        }, 8000)
+      }); 
+    };
   };
 
   audio.addEventListener("ended", () => {
