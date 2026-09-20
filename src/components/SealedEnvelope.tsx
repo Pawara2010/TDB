@@ -25,7 +25,7 @@ export function SealedEnvelope({ onOpen, isOpening }: SealedEnvelopeProps) {
     // Optional: celebration chime after delay
 
   return (
-    <section className="flex min-h-screen w-full items-center justify-center bg-linear-to-br from-pink-50 via-rose-50 to-amber-50 p-6">
+    <section className="flex h-dvh w-full items-center justify-center bg-linear-to-br from-pink-50 via-rose-50 to-amber-50 p-6">
       <motion.button
         type="button"
         onClick={handleOpen}
