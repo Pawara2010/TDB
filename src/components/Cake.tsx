@@ -63,7 +63,7 @@ export function Cake({ onOpen }: CakeProps) {
   };
 
   return (
-    <section className="h-screen bg-[url('/bg-2.webp')] bg-center bg-cover flex flex-col items-center justify-center">
+    <section className="h-dvh bg-[url('/bg-2.webp')] bg-center bg-cover flex flex-col items-center justify-center">
         <img
           id="cakeSt"
           src={gif}
