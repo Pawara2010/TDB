@@ -35,7 +35,7 @@ export function MessageLetter({ onOpen }: MessageLetterProps) {
 
   return (
     <section
-    className="h-screen flex justify-center items-center bg-center bg-no-repeat bg-cover relative overflow-hidden"
+    className="h-dvh flex justify-center items-center bg-center bg-no-repeat bg-cover relative overflow-hidden"
     style={{ backgroundImage: "url(/birthday_bg.jpg)" }}
     >
       
