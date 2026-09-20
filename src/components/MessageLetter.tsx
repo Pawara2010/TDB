@@ -11,28 +11,6 @@ export function MessageLetter({ onOpen }: MessageLetterProps) {
     onOpen();
   }, [onOpen]);
 
-  const name = "amsahani".split("");
-
-  const container = {
-    hidden: {},
-    visible: {
-      transition: { delayChildren: 1.2, staggerChildren: 0.15 },
-    },
-  };
-
-  const letterVariant = {
-    hidden: { opacity: 0, x: 60 },
-    visible: { opacity: 1, x: 0, transition: { duration: 1.3 } },
-  };
-
-  const pVariant = {
-    hidden: { opacity: 1, rotate: 0, x: 60, y: 4 },
-    visible: {
-      opacity: 1, y: 0, x: 0, rotate: 180,
-      transition: { duration: 1.3, delay: 1},
-    },
-  };
-
   return (
     <section
     className="h-dvh flex justify-center items-center bg-center bg-no-repeat bg-cover relative overflow-hidden"
