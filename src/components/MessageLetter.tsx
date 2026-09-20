@@ -59,7 +59,7 @@ export function MessageLetter({ onOpen }: MessageLetterProps) {
         </p>
         <div className="mt-1 flex justify-center text-3xl font-bold text-pink-100">
           <motion.span variants={pVariant} initial="hidden" animate="visible"
-            className="text-red-400 font top-3" style={{ position: "relative" }}>p</motion.span>
+            className="text-red-400 font top-8" style={{ position: "relative" }}>p</motion.span>
           <motion.div variants={container} initial="hidden" animate="visible"
             className="flex items-center text-center">
             {name.map((char, index) => (
