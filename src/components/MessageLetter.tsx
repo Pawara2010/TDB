@@ -35,7 +35,7 @@ export function MessageLetter({ onOpen }: MessageLetterProps) {
 
   return (
     <section
-    className="h-screen flex justify-center items-center bg-center bg-no-repeat bg-cover relative overflow-hidden"
+    className="h-dvh flex justify-center items-center bg-center bg-no-repeat bg-cover relative overflow-hidden"
     style={{ backgroundImage: "url(/birthday_bg.jpg)" }}
     >
       
@@ -57,16 +57,7 @@ export function MessageLetter({ onOpen }: MessageLetterProps) {
         <p className="text-5xl font-bold uppercase tracking-[0.15em] text-amber-300 drop-shadow-lg animate-pulse">
           Happy Birthday
         </p>
-        <div className="mt-1 flex justify-center text-3xl font-bold text-pink-100">
-          <motion.span variants={pVariant} initial="hidden" animate="visible"
-            className="text-red-400 font" style={{ position: "relative" }}>p</motion.span>
-          <motion.div variants={container} initial="hidden" animate="visible"
-            className="flex items-center text-center" style={{ lineHeight: "1.6em" }}>
-            {name.map((char, index) => (
-              <motion.span key={index} variants={letterVariant}
-                className="inline-block align-middle font text-red-400">{char}</motion.span>
-            ))}
-          </motion.div>
+        <span className="text-red-400 font">Damsahani</span>
         </div>
       </motion.div>
     </section>
