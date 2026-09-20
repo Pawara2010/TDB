@@ -22,7 +22,7 @@ export default function BirthdayShow() {
 
 
   return (
-    <section className="h-screen w-screen flex justify-center items-center bg-black overflow-hidden relative">
+    <section className="h-dvh w-screen flex justify-center items-center bg-black overflow-hidden relative">
       
       {/* Animated starry background */}
       {[...Array(40)].map((_, i) => (
