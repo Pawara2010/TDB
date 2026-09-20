@@ -58,15 +58,7 @@ export function MessageLetter({ onOpen }: MessageLetterProps) {
           Happy Birthday
         </p>
         <div className="mt-1 flex justify-center text-3xl font-bold text-pink-100">
-          <motion.span variants={pVariant} initial="hidden" animate="visible"
-            className="text-red-400 font top-3 relative">p</motion.span>
-          <motion.div variants={container} initial="hidden" animate="visible"
-            className="flex items-center text-center">
-            {name.map((char, index) => (
-              <motion.span key={index} variants={letterVariant}
-                className="inline-block align-middle font text-red-400">{char}</motion.span>
-            ))}
-          </motion.div>
+          <span className="text-red-400 font">Damsahani</span>
         </div>
       </motion.div>
     </section>
