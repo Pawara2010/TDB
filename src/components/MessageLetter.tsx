@@ -62,5 +62,5 @@ export function MessageLetter({ onOpen }: MessageLetterProps) {
         </div>
       </motion.div>
     </section>
-  );
+  ); 
 }
